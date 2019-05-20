@@ -3,23 +3,23 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton' ;
+//これら引用先？みたいなん記入はマストな
 
-
-export class Formuserdetail extends Component {
+export class Formuserdetail extends Component { 
     continue = e =>{
         e.preventDefault();
         this.props.nextStep();
     }
-  render() {
-      const { values , handleChange} = this.props
+  render() {　//返す
+      const { values , handleChange} = this.props　//constをthis.propsと定義した
     return (
       <MuiThemeProvider>
           <React.Fragment>
-              <AppBar title = "Enter the User Details"/>
+              <AppBar title = "Enter the User Details"/>　//barに表示されるもの
               <TextField
-              hintText ="Enter your first name"
-              floatingLabelText ="First Name"
-              onChange = {handleChange('firstName')}
+              hintText ="Enter your first name"　//カーソル近づけると表示される
+              floatingLabelText ="First Name"　//常に表示されてる
+              onChange = {handleChange('firstName')} //ユーザーが記入したときにおこるイベント
               defaultvalue ={values.firstName}/>
               <br/>
               <TextField
