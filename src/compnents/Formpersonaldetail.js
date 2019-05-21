@@ -42,14 +42,14 @@ export class Formpersonaldetail extends Component {
               <br/>
               <RaisedButton 
               label ="Continue"
-              primary ={true}
+              primary ={true}　//ボタンの色
               style ={styles.button}
-              onClick ={this.continue}/>
+              onClick ={this.continue}/>　//ボタンで続ける
               <RaisedButton 
               label ="back"
-              primary ={false}
+              primary ={false}　//ボタンの色
               style ={styles.button}
-              onClick ={this.back}/>
+              onClick ={this.back}/>　//ボタンで前に戻る
           </React.Fragment>
       </MuiThemeProvider>
     )
@@ -62,4 +62,4 @@ const styles ={
 }
 
 
-export default Formpersonaldetail
+export default Formpersonaldetail //しっかり最後はexportすること
