@@ -3,7 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton' ;
-
+//マストで書く引用の分
 
 export class Formpersonaldetail extends Component {
     continue = e =>{
